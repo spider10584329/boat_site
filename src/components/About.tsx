@@ -59,39 +59,55 @@ const About = () => {
               {/* Large+: Original 4-column complex layout */}
               
               {/* Left tall image */}
-              <div className="sm:col-span-1 md:col-span-1 lg:col-span-1 lg:row-span-2 order-1">
+              <div className="relative sm:col-span-1 md:col-span-1 lg:col-span-1 lg:row-span-2 order-1 overflow-hidden">
                 <img 
                   src={HeroBat} 
                   alt="Hero Boat" 
-                  className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[800px] object-cover shadow-lg border-4 border-white"
+                  className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[800px] object-cover shadow-lg border-4 border-white transition-transform duration-300 ease-in-out hover:scale-110"
                 />
+                <div className="absolute bottom-4 left-4 right-4 bg-black/20 text-white px-3 py-2 rounded-lg ">
+                  <h3 className="text-sm sm:text-base md:text-lg font-semibold">Adventure Awaits</h3>
+                  <p className="text-xs sm:text-sm opacity-90">Explore pristine waters</p>
+                </div>
               </div>
               
               {/* Top middle wide image */}
-              <div className="sm:col-span-1 md:col-span-1 lg:col-span-2 order-2 lg:order-2">
+              <div className="relative sm:col-span-1 md:col-span-1 lg:col-span-2 order-2 lg:order-2 overflow-hidden">
                 <img 
                   src={Forest} 
                   alt="Forest" 
-                  className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover shadow-lg border-4 border-white"
+                  className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover shadow-lg border-4 border-white transition-transform duration-300 ease-in-out hover:scale-110"
                 />
+                <div className="absolute bottom-4 left-4 right-4 bg-black/20 text-white px-3 py-2 rounded-lg ">
+                  <h3 className="text-sm sm:text-base md:text-lg font-semibold">Forest Camping</h3>
+                  <p className="text-xs sm:text-sm opacity-90">Connect with nature</p>
+                </div>
               </div>
               
               {/* Right tall image */}
-              <div className="sm:col-span-1 md:col-span-1 lg:col-span-1 lg:row-span-2 order-4 sm:order-3">
+              <div className="relative sm:col-span-1 md:col-span-1 lg:col-span-1 lg:row-span-2 order-4 sm:order-3 overflow-hidden">
                 <img 
                   src={River} 
                   alt="River" 
-                  className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[800px] object-cover shadow-lg border-4 border-white"
+                  className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[800px] object-cover shadow-lg border-4 border-white transition-transform duration-300 ease-in-out hover:scale-110"
                 />
+                <div className="absolute bottom-4 left-4 right-4 bg-black/20 text-white px-3 py-2 rounded-lg ">
+                  <h3 className="text-sm sm:text-base md:text-lg font-semibold">River Journey</h3>
+                  <p className="text-xs sm:text-sm opacity-90">Navigate waterways</p>
+                </div>
               </div>
               
               {/* Bottom middle wide image */}
-              <div className="sm:col-span-1 md:col-span-1 lg:col-span-2 order-3 sm:order-4 lg:order-4">
+              <div className="relative sm:col-span-1 md:col-span-1 lg:col-span-2 order-3 sm:order-4 lg:order-4 overflow-hidden">
                 <img 
                   src={Tent} 
                   alt="Tent" 
-                  className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover shadow-lg border-4 border-white"
+                  className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover shadow-lg border-4 border-white transition-transform duration-300 ease-in-out hover:scale-110"
                 />
+                <div className="absolute bottom-4 left-4 right-4 bg-black/20 text-white px-3 py-2 rounded-lg ">
+                  <h3 className="text-sm sm:text-base md:text-lg font-semibold">Waterside Camping</h3>
+                  <p className="text-xs sm:text-sm opacity-90">Sleep under the stars</p>
+                </div>
               </div>
               
             </div>
