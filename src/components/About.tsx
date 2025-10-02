@@ -14,7 +14,6 @@ import RiversImg from "@/assets/river.png";
 import ForestImg from "@/assets/forest.png";
 import TentImg from "@/assets/tent.png";
 const locations = [
-  { icon: Ship, title: "Harbours", color: "text-primary", image: HarboursImg },
   { icon: Waves, title: "Estuaries", color: "text-accent", image: EstuariesImg },
   { icon: Mountain, title: "Lakes", color: "text-primary-light", image: LakesImg },
   { icon: Waves, title: "Rivers", color: "text-primary-dark", image: RiversImg },
@@ -26,7 +25,7 @@ const About = () => {
   return (
     <>
     <section id="about" className="py-4 sm:py-8">
-      <div className="w-full mx-auto px-2 sm:px-4">       
+      <div className="w-full mx-auto mt-10 px-4 sm:px-4">       
             <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16 px-2 sm:px-4 md:px-8">
               {locations.map((location, index) => {
                 return (
@@ -66,8 +65,8 @@ const About = () => {
                   className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[800px] object-cover shadow-lg border-4 border-white transition-transform duration-300 ease-in-out hover:scale-110"
                 />
                 <div className="absolute bottom-4 left-4 right-4 bg-black/20 text-white px-3 py-2 rounded-lg ">
-                  <h3 className="text-sm sm:text-base md:text-lg font-semibold">Adventure Awaits</h3>
-                  <p className="text-xs sm:text-sm opacity-90">Explore pristine waters</p>
+                  <h3 className="text-2xl sm:text-lg md:text-2xl font-semibold">Honda 15 hp 4-stroke engine</h3>
+                  <p className="text-xs sm:text-sm opacity-90">The Honda 15 hp 4-stroke engine is quiet and economical, making it ideal for driving in New Zealand's safe areas. Equipped with electric start and electric tilting, it ensures a remarkably stable ride.</p>
                 </div>
               </div>
               
@@ -79,8 +78,8 @@ const About = () => {
                   className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover shadow-lg border-4 border-white transition-transform duration-300 ease-in-out hover:scale-110"
                 />
                 <div className="absolute bottom-4 left-4 right-4 bg-black/20 text-white px-3 py-2 rounded-lg ">
-                  <h3 className="text-sm sm:text-base md:text-lg font-semibold">Forest Camping</h3>
-                  <p className="text-xs sm:text-sm opacity-90">Connect with nature</p>
+                  <h3 className="text-2xl sm:text-lg md:text-2xl  font-semibold">Catamaran style hull</h3>
+                  <p className="text-xs sm:text-sm opacity-90">The catamaran-style hull allows for navigation in estuaries with large tidal ranges, ensuring habitability even during low tide.</p>
                 </div>
               </div>
               
@@ -92,8 +91,8 @@ const About = () => {
                   className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[800px] object-cover shadow-lg border-4 border-white transition-transform duration-300 ease-in-out hover:scale-110"
                 />
                 <div className="absolute bottom-4 left-4 right-4 bg-black/20 text-white px-3 py-2 rounded-lg ">
-                  <h3 className="text-sm sm:text-base md:text-lg font-semibold">River Journey</h3>
-                  <p className="text-xs sm:text-sm opacity-90">Navigate waterways</p>
+                  <h3 className="text-2xl sm:text-lg md:text-2xl  font-semibold">Convenient internal structure</h3>
+                  <p className="text-xs sm:text-sm opacity-90">Navigate waterways with easeIncludes basic cooking and washing facilities, and portable toilet, in similar setup to camper van.</p>
                 </div>
               </div>
               
@@ -105,8 +104,8 @@ const About = () => {
                   className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover shadow-lg border-4 border-white transition-transform duration-300 ease-in-out hover:scale-110"
                 />
                 <div className="absolute bottom-4 left-4 right-4 bg-black/20 text-white px-3 py-2 rounded-lg ">
-                  <h3 className="text-sm sm:text-base md:text-lg font-semibold">Waterside Camping</h3>
-                  <p className="text-xs sm:text-sm opacity-90">Sleep under the stars</p>
+                  <h3 className="text-2xl sm:text-lg md:text-2xl  font-semibold">Night Lighting</h3>
+                  <p className="text-xs sm:text-sm opacity-90">Choose your preferred water area and enjoy fishing anytime, day or night.</p>
                 </div>
               </div>
               
@@ -115,9 +114,9 @@ const About = () => {
       </div>
     </section>
 
-      <div className="relative">
+      {/* <div className="relative">
         <WaveDividerTop fill="hsla(173.84, 66.97%, 42.75%, 1.00)" />
-      </div>
+      </div> */}
     </>
   );
 };

@@ -36,7 +36,7 @@ const WaveDivider = ({ className = "", flip = false, fill = "currentColor" }: Wa
           fill={primaryFill}
           fillOpacity="1.0"
           style={{
-            animation: 'wave-morph-top-1 8s ease-in-out infinite'
+            animation: 'wave-morph-top-1 45s ease-in-out infinite'
           }}
         />
         {/* Second wave layer - medium transparency (offset pattern) */}
@@ -45,7 +45,7 @@ const WaveDivider = ({ className = "", flip = false, fill = "currentColor" }: Wa
           fill={secondaryFill}
           fillOpacity="0.4"
           style={{
-            animation: 'wave-morph-top-2 14s ease-in-out infinite reverse'
+            animation: 'wave-morph-top-2 60s ease-in-out infinite reverse'
           }}
         />
         {/* Third wave layer - lightest transparency for subtle depth */}
@@ -54,7 +54,7 @@ const WaveDivider = ({ className = "", flip = false, fill = "currentColor" }: Wa
           fill={secondaryFill}
           fillOpacity="0.2"
           style={{
-            animation: 'wave-morph-top-1 17s ease-in-out infinite'
+            animation: 'wave-morph-top-1 75s ease-in-out infinite'
           }}
         />
       </svg>

@@ -32,11 +32,11 @@ const Features = () => {
   return (
     <>
       <div className="relative" style={{ background: 'linear-gradient(to bottom, #24b6a7 0%, #06639c 100%)' }}>
-        <section id="features" className="py-10 sm:py-10 md:py-10 pt-2 pb-20 sm:pb-24 md:pb-32">
+        <section id="features" className="py-10 sm:py-10 md:py-10 pt-10 pb-20 sm:pb-24 md:pb-32">
           <div className="px-2 sm:px-4">            
             
             {/* Title Section */}
-            <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <div className="text-center mb-8  mt-8 sm:mb-10 md:mb-12">
               <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#ffffff] mb-0">
                 Key Features
               </h2>           
@@ -110,9 +110,9 @@ const Features = () => {
           </div>           
         </section>
 
-        <div className="absolute bottom-0 left-0 right-0 text-background">
+        {/* <div className="absolute bottom-0 left-0 right-0 text-background">
           <WaveDivider fill="#ffffff" />
-        </div>
+        </div> */}
       </div>
     </>
   );

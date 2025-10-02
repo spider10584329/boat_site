@@ -36,9 +36,9 @@ const Hero = () => {
         </Button>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 text-background">
+      {/* <div className="absolute bottom-0 left-0 right-0 text-background">
         <WaveDivider fill="hsl(var(--background))" />
-      </div>
+      </div> */}
     </section>
   );
 };

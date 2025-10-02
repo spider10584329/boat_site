@@ -11,9 +11,9 @@ const Information = () => {
       <section className="py-10 bg-background">
         
       </section>
-      <div className="relative">
+      {/* <div className="relative">
         <WaveDividerTop fill="hsla(202, 84%, 65%, 1.00)" />
-      </div>
+      </div> */}
     </>
     
   );
