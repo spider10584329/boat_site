@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { toast } from "sonner";
+import HandshakeIcon from "@/assets/handshake.svg";
 
 
 const Contact = () => {
@@ -42,7 +43,36 @@ const Contact = () => {
 
         <section id="contact" className="py-12 sm:py-16 md:py-20 pt-2">
           <div className="container mx-auto px-2 sm:px-4">
-            <div className="max-w-2xl mx-auto">
+            {/* Promotional Header */}
+            <div className="text-center mb-8 sm:mb-12">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 sm:mb-8 px-4">
+                AQUA-CAMPA HOLIDAYS LIMITED IS TAKING PRE-ORDER INTEREST TO BE ABLE 
+                TO OFFER BEST PRICE FOR THIS UNIQUE OPPORTUNITY.
+              </h1>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+              {/* Left Side - Call to Action */}
+              <div className="flex flex-col justify-center items-center text-center bg-blue-800/30 rounded-lg p-6 sm:p-8 backdrop-blur-sm">
+                <div className="w-32 h-32 sm:w-64 sm:h-64 mb-6 flex items-center justify-center">
+                  <img 
+                    src={HandshakeIcon} 
+                    alt="Handshake" 
+                    className="w-full h-full brightness-0 invert"
+                  />
+                </div>
+                <div className="text-white">
+                  <p className="text-lg sm:text-xl mb-4">
+                    If you are situated near a suitable operational location anywhere in NZ and would like to be part of this exciting venture,
+                  </p>
+                  <p className="text-xl sm:text-2xl font-bold">
+                    REGISTER YOUR INTEREST NOW!
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Side - Contact Form */}
+              <div className="max-w-2xl">
               <Card className="p-4 sm:p-6 md:p-8 shadow-medium">
                 <h2 className="text-2xl sm:text-3xl font-bold text-center text-foreground mb-6 sm:mb-8">Contact</h2>
                 <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
@@ -156,6 +186,7 @@ const Contact = () => {
                   </Button>
                 </form>
               </Card>
+              </div>
             </div>
           </div>
         </section>
